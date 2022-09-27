@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_bitra.mk
+    $(LOCAL_DIR)/xdroid_bitra.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_bitra-user \
-    aosp_bitra-userdebug \
-    aosp_bitra-eng
+    xdroid_bitra-user \
+    xdroid_bitra-userdebug \
+    xdroid_bitra-eng

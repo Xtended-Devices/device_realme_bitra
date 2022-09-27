@@ -34,14 +34,23 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/sound_trigger_mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_ODM)/etc/sound_trigger_platform_info.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
+    $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml \
 
+# RealmeParts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp_whitelist_org.device.Realmeparts.xml:system/etc/permissions/privapp_whitelist_org.device.Realmeparts.xml 
+
+# CABC support
+# PRODUCT_COPY_FILES += \
+#     packages/apps/RealmeParts/init/cabc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cabc.rc
+    
 # Overlays
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
-    OPlusExtrasResTarget \
     OPlusSettingsProviderResTarget \
-    OPlusSystemUIResTarget
+    OPlusSystemUIResTarget  \
+    RealmeParts
+
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
