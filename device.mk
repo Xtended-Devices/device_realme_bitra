@@ -43,21 +43,20 @@ PRODUCT_PACKAGES += \
     OPlusSettingsProviderResTarget \
     OPlusSystemUIResTarget
 
-# Overlays
-# DEVICE_PACKAGE_OVERLAYS += \
-#     $(LOCAL_PATH)/overlay-xtended
-
 # RealmeParts
 PRODUCT_PACKAGES += \
     RealmeDiracGef \
     RealmeProximityHelper
-    # RealmeParts old
+
 
 # RealmeParts
 $(call inherit-product, packages/apps/RealmeParts/parts.mk)
 
-PRODUCT_COPY_FILES += \
-    packages/apps/RealmeParts/init/cabc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cabc.rc
+# RealmeDirac
+# $(call inherit-product, packages/apps/RealmeDirac/dirac.mk)
+
+# PRODUCT_COPY_FILES += \
+#     packages/apps/RealmeParts/init/cabc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cabc.rc
     
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
