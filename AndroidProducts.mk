@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xdroid_bitra.mk
+    $(LOCAL_DIR)/xtended_bitra.mk
 
 COMMON_LUNCH_CHOICES := \
-    xdroid_bitra-user \
-    xdroid_bitra-userdebug \
-    xdroid_bitra-eng
+    xtended_bitra-user \
+    xtended_bitra-userdebug \
+    xtended_bitra-eng

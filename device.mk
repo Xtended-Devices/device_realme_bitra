@@ -44,15 +44,21 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResTarget
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-xdroid
+# DEVICE_PACKAGE_OVERLAYS += \
+#     $(LOCAL_PATH)/overlay-xtended
 
 # RealmeParts
 PRODUCT_PACKAGES += \
-    $(LOCAL_PATH)/RealmeDiracGef \
-    $(LOCAL_PATH)/RealmeProximityHelper \
-    $(LOCAL_PATH)/RealmeParts
+    RealmeDiracGef \
+    RealmeProximityHelper
+    # RealmeParts old
 
+# RealmeParts
+$(call inherit-product, packages/apps/RealmeParts/parts.mk)
+
+PRODUCT_COPY_FILES += \
+    packages/apps/RealmeParts/init/cabc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cabc.rc
+    
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/realme/bitra
