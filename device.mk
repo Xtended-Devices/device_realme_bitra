@@ -51,9 +51,12 @@ PRODUCT_PACKAGES += \
     RealmeDiracGef \
     RealmeProximityHelper
 
+# Alert slider
+PRODUCT_PACKAGES += \
+    DeviceSettings
 
 # RealmeParts
-$(call inherit-product, packages/apps/RealmeParts/parts.mk)
+#$(call inherit-product, packages/apps/RealmeParts/parts.mk)
 
 # RealmeDirac
 # $(call inherit-product, packages/apps/RealmeDirac/dirac.mk)
