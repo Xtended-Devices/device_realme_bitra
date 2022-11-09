@@ -13,5 +13,7 @@
     
     <!-- Device specific doze package -->
     <string name="config_customDozePackage">org.lineageos.settings.doze/org.lineageos.settings.doze.DozeSettingsActivity</string>
-
+    
+    <!-- Whether Screen Off FOD Working for this Device -->
+    <bool name="config_screenOffFodWorking">true</bool>
 </resources>
