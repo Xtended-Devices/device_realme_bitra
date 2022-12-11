@@ -2280,6 +2280,11 @@
         <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1" value="1" />
     </path>
 
+    <path name="voicemmode1-call hearing-aid">
+        <ctl name="AFE_PCM_RX_Voice Mixer VoiceMMode1" value="1" />
+        <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1" value="1" />
+    </path>
+
     <path name="voicemmode1-call speaker">
         <ctl name="TERT_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1" value="1" />
@@ -2346,6 +2351,11 @@
 
     <path name="voicemmode2-call speaker">
         <ctl name="TERT_MI2S_RX_Voice Mixer VoiceMMode2" value="1" />
+        <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="1" />
+    </path>
+
+    <path name="voicemmode2-call hearing-aid">
+        <ctl name="AFE_PCM_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="1" />
     </path>
 
@@ -2665,6 +2675,10 @@
         <ctl name="ADC1 Volume" value="8" />
     </path>
 
+    <path name="speaker-mic-bak">
+        <path name="dmic3" />
+    </path>
+
     <path name="speaker-mic-liquid">
         <path name="dmic3" />
     </path>
@@ -2762,6 +2776,15 @@
     <path name="handset-mic-qrd">
         <path name="dmic3" />
         <ctl name="DEC7 Volume" value="84" />
+    </path>
+
+    <path name="handset-mic-bak">
+        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX0" value="ADC0" />
+        <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
+        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+
     </path>
 
     <path name="voice-handset-mic-qrd">
@@ -2995,7 +3018,7 @@
     </path>
 
     <path name="voice-speaker-mic">
-        <path name="speaker-mic" />
+        <path name="speaker-mic-bak" />
     </path>
 
     <path name="voice-speaker-mic-qrd">
@@ -3140,8 +3163,7 @@
     </path>
 
     <path name="voice-rec-mic">
-        <path name="handset-mic" />
-        <ctl name="TX_DEC2 Volume" value="78" />
+        <path name="handset-mic-bak" />
     </path>
 
     <path name="camcorder-mic">
@@ -3545,6 +3567,12 @@
         <ctl name="ADC1_MIXER Switch" value="1" />
         <ctl name="ADC1 Volume" value="8" />
     </path>
+    <!--#ifdef OPLUS_ARCH_EXTENDS-->
+    <!--Zhaoan.Xu@MULTIMEDIA.AUDIODRIVER.HAL.2472965, 2021/12/17, add for support BT hearing-aid feature-->
+    <path name="hearing-aid-mic">
+        <path name="voice-speaker-dmic-ef" />
+    </path>
+    <!--#endif OPLUS_ARCH_EXTENDS-->
 
     <path name="voice-rec-dmic-ef">
         <path name="dmic-endfire" />
@@ -3797,7 +3825,7 @@
     </path>
 
     <path name="unprocessed-handset-mic">
-        <path name="handset-mic" />
+        <path name="handset-mic-bak" />
     </path>
 
     <path name="unprocessed-mic">
@@ -4133,7 +4161,9 @@
     <path name="incall_music_uplink bt-sco-swb">
         <path name="incall_music_uplink" />
     </path>
-
+    <path name="incall_music_uplink hearing-aid">
+        <path name="incall_music_uplink" />
+    </path>
     <path name="incall_music_uplink speaker-and-display-port">
         <path name="incall_music_uplink" />
     </path>
@@ -4321,7 +4351,9 @@
     <path name="incall_music_uplink2 bt-a2dp">
         <path name="incall_music_uplink2" />
     </path>
-
+    <path name="incall_music_uplink2 hearing-aid">
+        <path name="incall_music_uplink2" />
+    </path>
     <path name="call-proxy">
     </path>
 
