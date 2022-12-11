@@ -50,24 +50,6 @@ PRODUCT_PACKAGES += \
     OPlusSettingsProviderResTarget \
     OPlusSystemUIResTarget
 
-# RealmeParts
-PRODUCT_PACKAGES += \
-    RealmeDiracGef \
-    RealmeProximityHelper
-
-# Alert slider
-PRODUCT_PACKAGES += \
-    DeviceSettings
-
-# RealmeParts
-#$(call inherit-product, packages/apps/RealmeParts/parts.mk)
-
-# RealmeDirac
-# $(call inherit-product, packages/apps/RealmeDirac/dirac.mk)
-
-# PRODUCT_COPY_FILES += \
-#     packages/apps/RealmeParts/init/cabc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cabc.rc
-    
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/realme/bitra
