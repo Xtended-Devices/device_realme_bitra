@@ -19,13 +19,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Elixir stuff
-$(call inherit-product, vendor/xtended/config/common.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Bootanimation resolution
 TARGET_BOOT_ANIMATION_RES := 1080
-
-# Lawnchair
-#FORCE_LAWNCHAIR := true
 
 # Inherit from device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
