@@ -1,7 +1,7 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from realme GT Neo2 5G (RMX3370_11.C.10).
+## from realme GT Neo2 5G (RMX3370_11.F.02).
 
-# ACDB (From RUI F.02)
+# ACDB 
 odm/etc/acdbdata/Bluetooth_cal.acdb
 odm/etc/acdbdata/General_cal.acdb
 odm/etc/acdbdata/Global_cal.acdb
@@ -10,12 +10,12 @@ odm/etc/acdbdata/Hdmi_cal.acdb
 odm/etc/acdbdata/Headset_cal.acdb
 odm/etc/acdbdata/Speaker_cal.acdb
 
-# ADSP Modules
+# ADSP Modules  
 odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel_21619.so
 odm/lib/rfsa/adsp/libarcsoft_hdrplus_se_hvx_skel_21619.so
 odm/lib/rfsa/adsp/libarcsoft_portraitsn_hvx_skel_21619.so
 
-# Audio
+# Audio (RMX3370_11.C.10)
 odm/lib/libaudioEngineerTest.so
 odm/lib/liblvimfs.so
 odm/lib/liblvimfs_wrapper.so
@@ -26,10 +26,10 @@ vendor/lib/libgui1_vendor.so
 vendor/lib/libssrec.so
 vendor/lib/vendor.oplus.hardware.extcamera@1.0.so
 
-# Audio firmware(From RUI F.02)
+# Audio firmware
 odm/firmware/tfa98xx.cnt
 
-# Audio LVIMFS Params(From RUI F.02)
+# Audio LVIMFS Params
 odm/etc/lvimfs_params/LVACFS_Configuration.txt
 odm/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt
@@ -57,7 +57,7 @@ odm/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt
 
-# Camera(From rui F.02)
+# Camera (RMX3370_11.C.10)
 odm/etc/camera/config/camera_unit_config
 odm/etc/camera/config/hi846
 odm/etc/camera/config/imx471
@@ -81,7 +81,7 @@ odm/lib64/camera/com.qti.tuned.sm8250_shine_ov02b.bin
 odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846.bin
 odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471_2169A.bin
 
-# Charger(From RUI F.02)
+# Charger
 odm/firmware/fastchg/136730/charging_thermal_config_default.txt
 odm/firmware/fastchg/136730/oplus_vooc_fw_rk826.bin
 odm/firmware/fastchg/136858/charging_thermal_config_default.txt
@@ -99,20 +99,20 @@ odm/firmware/fastchg/2169B/charging_thermal_config_default.txt
 odm/firmware/fastchg/2169B/oplus_vooc_fw_rk826.bin
 odm/firmware/fastchg/charging_thermal_config_default.txt
 
-# Display calibration data
+# Display calibration data  
 vendor/etc/ltm_config_samsung_ams662zs01_dsc_cmd_mode_panel.xml
 vendor/etc/ltm_config_samsung_ams662zs01_dvt_dsc_cmd_mode_panel.xml
 vendor/etc/qdcm_calib_data_samsung_ams662zs01_dsc_cmd_mode_panel.xml
 vendor/etc/qdcm_calib_data_samsung_ams662zs01_dvt_dsc_cmd_mode_panel.xml
 
-# Display eye protection data
+# Display eye protection data  
 odm/etc/samsung1024_ams662zs01_eyeprotect_data.xml
 odm/etc/samsung1024_ana6706_cinema_eyeprotect_data.xml
 odm/etc/samsung1024_ana6706_colorful_eyeprotect_data.xml
 odm/etc/samsung1024_ana6706_eyeprotect_data.xml
 odm/etc/samsung1024_ana6706_srgb_eyeprotect_data.xml
 
-# Fingerprint firmware
+# Fingerprint firmware 
 odm/vendor/firmware/ancap64.b00
 odm/vendor/firmware/ancap64.b01
 odm/vendor/firmware/ancap64.b02
@@ -141,7 +141,7 @@ vendor/firmware/image/opluseid.b06
 vendor/firmware/image/opluseid.b07
 vendor/firmware/image/opluseid.mdt
 
-# Keymaster
+# Keymaster 
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
 vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
 vendor/lib64/libkeymasterdeviceutils.so
@@ -149,15 +149,15 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
-# NFC
+# NFC 
 odm/etc/nfc/libnfc-mtp-SN100.conf_2169B:vendor/etc/libnfc-nxp.conf
 odm/etc/nfc/libnfc-nci.conf_2169B:vendor/etc/libnfc-nci.conf
 odm/lib/libsn100u_fw.so:vendor/lib/libsn100u_fw.so
 
-# Perf
+# Perf  
 vendor/lib/vendor.oplus.hardware.performance@1.0.so
 
-# Sensors(From RUI F.02)
+# Sensors
 odm/etc/sensor/config/kona_qrd_bmi26x_0.json
 odm/etc/sensor/config/kona_qrd_cct.json
 odm/etc/sensor/config/kona_qrd_cct_rear.json
@@ -166,12 +166,12 @@ odm/etc/sensor/config/kona_qrd_lsm6dso.json
 odm/etc/sensor/config/kona_qrd_sx933x_0.json
 odm/etc/sensor/sensor_config.json
 
-# Touchscreen firmware
+# Touchscreen firmware  
 odm/firmware/tp/21619/FW_S3908_SAMSUNG.img
 odm/firmware/tp/21619/FW_S3908_SAMSUNG_FAE.img
 odm/firmware/tp/21619/LIMIT_S3908_SAMSUNG.img
 
-# Vibrator firmware
+# Vibrator firmware 
 odm/firmware/aw8697_realme_gt_RTP_170_165Hz.bin
 odm/firmware/aw8697_realme_gt_RTP_170_170Hz.bin
 odm/firmware/aw8697_realme_gt_RTP_170_175Hz.bin
@@ -185,5 +185,5 @@ odm/firmware/aw8697_realme_tune_RTP_162_165Hz.bin
 odm/firmware/aw8697_realme_tune_RTP_162_170Hz.bin
 odm/firmware/aw8697_realme_tune_RTP_162_175Hz.bin
 
-# Wifi
+# Wifi 
 odm/etc/wifi/bdwlan.elf
